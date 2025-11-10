@@ -13,16 +13,16 @@ const Question = ({ bookingInfo, handleBookingInfoChange }) => {
             <button
                 type="button"
                 onClick={() => handleBookingInfoChange("is_first_time", value)}
-                className={`border overflow-hidden flex relative flex-col justify-start items-start gap-3 rounded-sm cursor-pointer transition-all duration-300 text-heading ease-in-out px-6 py-5 w-full ${isSelected ? 'border-primary' : 'border-[#CFCFCF]'
+                className={`border overflow-hidden flex relative flex-col justify-start items-start gap-3 rounded-sm cursor-pointer transition-all duration-300 text-heading ease-in-out md:px-6 md:py-5 p-3 w-full ${isSelected ? 'border-primary' : 'border-[#CFCFCF]'
                     }`}
             >
                 <div className="flex flex-col justify-start items-start">
                     <p className="text-base font-medium">{label}</p>
                     <p className="text-sm text-[#767676]">{subLabel}</p>
                 </div>
-                <span className="absolute top-4 flex justify-center items-center right-4 border size-7 rounded-full p-1 border-primary">
+                <span className="absolute top-2 md:top-4 flex justify-center items-center right-2 md:right-4 border size-5 md:size-7 rounded-full p-1 border-primary">
                     {isSelected && (
-                        <span className="size-3 block shrink-0 bg-[#B89E66] rounded-full" />
+                        <span className="md:size-3 size-1.5 block shrink-0 bg-[#B89E66] rounded-full" />
                     )}
                 </span>
             </button>
@@ -30,7 +30,7 @@ const Question = ({ bookingInfo, handleBookingInfoChange }) => {
     }
 
     return (
-        <div className="w-full flex flex-col justify-start items-start gap-8">
+        <div className="w-full flex flex-col justify-start items-start gap-4 md:gap-8">
             <StepTitle title="Is this your first visit to Daol Salon -Aseana?" />
             <div className="w-full flex flex-col gap-4">
                 {options.map((opt) => (

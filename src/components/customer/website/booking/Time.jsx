@@ -77,7 +77,7 @@ const Time = ({ bookingInfo, handleBookingInfoChange }) => {
     const [currentDate, setCurrentDate] = useState(saloneBookingData[0]);
     // main render
     return (
-        <div className='w-full flex flex-col justify-start gap-8'>
+        <div className='w-full flex flex-col justify-start gap-4 md:gap-8'>
             {/* header */}
             <div className='w-full flex justify-between items-center gap-3'>
                 <StepTitle title={'Select Date and Time'} />
@@ -93,20 +93,20 @@ const Time = ({ bookingInfo, handleBookingInfoChange }) => {
                     <p className='font-semibold text-xl capitalize'>{currentDate?.month} {currentDate?.year}</p>
                     {/** next and prev buttons */}
                     <div className='flex gap-4  justify-end items-center'>
-                        <button className='size-10 flex justify-center items-center p-1 rounded-full border border-gray-200 bg-white cursor-pointer'>
+                        <button className='sm:size-10 size-8 flex justify-center items-center p-1 rounded-full border border-gray-200 bg-white cursor-pointer'>
                             <FaAngleLeft />
                         </button>
-                        <button className='size-10 flex justify-center items-center p-1 rounded-full border border-gray-200 bg-white cursor-pointer'>
+                        <button className='sm:size-10 size-8 flex justify-center items-center p-1 rounded-full border border-gray-200 bg-white cursor-pointer'>
                             <FaAngleRight />
                         </button>
                     </div>
                 </div>
                 {/** dates */}
-                <div className='w-full grid grid-cols-7 gap-10 my-3'>
+                <div className='w-full grid grid-cols-4  md:grid-cols-7 gap-4 xl:gap-10 my-3'>
                     {
                         currentDate?.dates?.map((item) => (
                             <div className='w-full flex flex-col gap-1 justify-start items-center'>
-                                <span className='size-14 flex rounded-full text-base font-bold justify-center items-center border border-[#EAE3E3] hover:bg-primary hover:text-white cursor-pointer'>{item.date}</span>
+                                <span className='xl:size-14 size-10 flex rounded-full tex-xs xl:text-base font-bold justify-center items-center border border-[#EAE3E3] hover:bg-primary hover:text-white cursor-pointer'>{item.date}</span>
                                 <span className='text-sm text-black  font-bold'>{item.dayShort}</span>
                             </div>
                         ))
@@ -134,9 +134,9 @@ const Time = ({ bookingInfo, handleBookingInfoChange }) => {
             </div>
             {/** status */}
             <div className='w-full flex rounded-primary flex-col bg-white py-14 justify-center items-center'>
-                <div className='max-w-[480px] mx-auto flex flex-col gap-4 justify-center items-center'>
-                    <img src={bookingInfo?.professional?.image} className='size-16 rounded-full object-cover' alt="image" />
-                    <h3 className='text-3xl text-center text-heading font-bold'>{bookingInfo?.professional?.name} is fully booked this date</h3>
+                <div className='max-w-[480px] px-2 mx-auto flex flex-col gap-4 justify-center items-center'>
+                    <img src={bookingInfo?.professional?.image} className='md:size-16 size-10 rounded-full object-cover' alt="image" />
+                    <h3 className='md:text-3xl text-lg sm:text-xl text-center text-heading font-bold'>{bookingInfo?.professional?.name} is fully booked this date</h3>
                     <p className='text-base text-center text-paragraph font-medium'>Available from Sat, Sep 20 at 10:00 AM</p>
                     <div className='flex justify-center items-center gap-3'>
                         <button className='border cursor-pointer border-[#D3D3D3] px-4 py-2 rounded-full text-paragraph'>Go to next available date</button>
