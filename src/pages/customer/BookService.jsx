@@ -8,10 +8,13 @@ import Confirm from "@/components/customer/website/booking/Confirm";
 import Header from "@/components/customer/website/booking/Header";
 import serviceImage from '../../assets/images/about-hero.png'
 import StarRating from "@/components/common/StartRating";
+import Question from "@/components/customer/website/booking/Question";
+import { FaCalendarAlt } from "react-icons/fa";
+import { IoTimeOutline } from "react-icons/io5";
 const BookService = () => {
     // step form 
     const [step, setStep] = useState(0);
-    const totalSteps = 4;
+    const totalSteps = 5;
     // user booking info
     const [bookingInfo, setBookingInfo] = useState({
         service: null,
@@ -19,6 +22,7 @@ const BookService = () => {
         time: null,
         date: null,
         booking_note: null,
+        is_first_time: true,
     });
     // one single handler to update booking info receives field and value an 
     const handleBookingInfoChange = (field, value) => {
@@ -27,7 +31,7 @@ const BookService = () => {
             [field]: value,
         }));
     }
-  //  console.log("Booking info", bookingInfo);
+    //  console.log("Booking info", bookingInfo);
     // next
     const handleNext = () => {
         if (step < totalSteps - 1) {
@@ -50,13 +54,16 @@ const BookService = () => {
             case 2:
                 return <Time bookingInfo={bookingInfo} handleBookingInfoChange={handleBookingInfoChange} />;
             case 3:
+                return <Question bookingInfo={bookingInfo} handleBookingInfoChange={handleBookingInfoChange} />;
+            case 4:
                 return <Confirm bookingInfo={bookingInfo} handleBookingInfoChange={handleBookingInfoChange} />;
+
             default:
                 return null;
         }
     };
     // hamburger menu state
-    const hamburgers = ["Services", "Professional", "Time", "Confirm"];
+    const hamburgers = ["Services", "Professional", "Time", "Question", "Confirm"];
 
     return (
         <div className="bg-theme-bg">
@@ -94,6 +101,17 @@ const BookService = () => {
                                         <span className="text-sm text-[#767676] ml-1">(350)</span>
                                     </div>
                                     <p className="text-xs text-[#767676] mt-1">SECOND FLOOR, 8912 ASEAN AVENUE, BUIL…</p>
+                                </div>
+                            </div>
+                            {/* time and info */}
+                            <div className="w-full mt-3 flex flex-col justify-between items-start gap-3 ">
+                                <div className="flex justify-start items-center gap-1">
+                                    <FaCalendarAlt className="shrink-0" />
+                                    <span className="text-[#767676] text-xs">Saturday, September 20</span>
+                                </div>
+                                <div className="flex justify-start items-center gap-1">
+                                    <IoTimeOutline className="shrink-0" />
+                                    <span className="text-[#767676] text-xs">10:00-10:05 AM (5 mins duration)</span>
                                 </div>
                             </div>
                             {/* booking infos */}
