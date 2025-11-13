@@ -24,7 +24,7 @@ export const mockProfessionals = [
   {
     id: 3,
     name: 'Emily Johnson',
-    image: professional_1,
+    image: professional_2,
     rating: 4.9,
     totalReviews: 150,
     specialization: 'Nail Technician',
@@ -33,11 +33,38 @@ export const mockProfessionals = [
   {
     id: 4,
     name: 'Michael Brown',
-    image: professional_2,
+    image: professional_1,
     rating: 4.6,
     totalReviews: 80,
     specialization: 'Esthetician',
     duration: '1 hr, 30 min',
+  },
+  {
+    id: 5,
+    name: 'Sarah Lee',
+    image: professional_2,
+    rating: 4.7,
+    totalReviews: 110,
+    specialization: 'Makeup Artist',
+    duration: '2 hr',
+  },
+  {
+    id: 6,
+    name: 'David Kim',
+    image: professional_1,
+    rating: 4.8,
+    totalReviews: 90,
+    specialization: 'Facial Therapist',
+    duration: '1 hr, 15 min',
+  },
+  {
+    id: 7,
+    name: 'Olivia Davis',
+    image: professional_2,
+    rating: 4.9,
+    totalReviews: 130,
+    specialization: 'Tattoo Artist',
+    duration: '2 hr, 30 min',
   }
 ]
 // Mock service data for testing carousel functionality
