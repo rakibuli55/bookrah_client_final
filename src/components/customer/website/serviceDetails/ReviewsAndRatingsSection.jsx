@@ -75,7 +75,7 @@ const ReviewsAndRatingsSection = () => {
               <StarRating rating={review.rating} />
               <p className="text-gray-700 leading-relaxed">
                 {review.text}
-                <span className="text-blue-600 hover:underline cursor-pointer ml-1">
+                <span className="text-primary font-bold hover:underline cursor-pointer ml-1">
                   ...Read more
                 </span>
               </p>

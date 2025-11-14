@@ -53,12 +53,11 @@ const ServiceDetailsPage = () => {
             </div>
           </div>
           {/* Bottom Carousels */}
-          <div className="space-y-12">
+          <div className=" w-full mt-12 space-y-12">
             <ServiceCarousel
               title="Other locations"
               services={servicesByLocation}
             />
-
             <ServiceCarousel
               title="Venues nearby"
               services={recommendedServices}
