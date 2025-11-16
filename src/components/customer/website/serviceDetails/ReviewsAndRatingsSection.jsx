@@ -47,9 +47,9 @@ const ReviewsAndRatingsSection = () => {
         </div>
       </div>
       {/** Reviews */}
-      <div className="w-full mt-4 grid grid-cols-2 gap-x-20 gap-y-6">
+      <div className="w-full mt-4 c-lg:grid grid-cols-2 gap-x-20 gap-y-6">
         {reviews.map((review) => (
-          <div key={review.id} className="border-b border-gray-200 pb-6 last:border-b-0">
+          <div key={review.id} className="border-b border-gray-200 pb-6 last:border-b-0 c-lg:mt-0 c-xsm:mt-5">
             <div className="flex flex-col w-full items-start gap-3">
               {/* Avatar */}
               <div className="w-full flex justify-start items-start gap-2">
