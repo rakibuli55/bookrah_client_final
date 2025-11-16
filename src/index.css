@@ -795,3 +795,20 @@ div[data-rht-toaster] {
   background: #e6f7ff;
   border-radius: 50%;
 }
+
+
+.hero-slider .swiper-pagination {
+ z-index: 500 !important;
+ display: flex !important;
+ justify-content: end !important;
+ padding: 20px !important;
+ 
+}
+
+.hero-slider .swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  margin: 0 5px !important;
+  background: white !important;
+}
+
