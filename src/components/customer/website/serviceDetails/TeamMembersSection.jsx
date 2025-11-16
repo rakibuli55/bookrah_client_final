@@ -20,7 +20,7 @@ const TeamMembersSection = () => {
             className={`transition-all duration-150 ease-in-out rounded-xl relative  w-full flex flex-col justify-center hover:shadow-2xs cursor-pointer items-center `}
           >
             {/* Image */}
-            <div className={`size-24 rounded-full overflow-hidden flex justify-center items-center  ${professional.id === 'any' || professional.id === 'recommended' ? 'p-4 bg-[#E6E4E2]' : 'bg-white'} `}>
+            <div className={`c-md:size-24 c-xsm:size-20 rounded-full overflow-hidden flex justify-center items-center  ${professional.id === 'any' || professional.id === 'recommended' ? 'p-4 bg-[#E6E4E2]' : 'bg-white'} `}>
               <img
                 src={professional.image}
                 alt={professional.name}

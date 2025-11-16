@@ -3,11 +3,11 @@ import { Clock, Heart, MapPin, Share2, Star } from 'lucide-react';
 
 const SalonHeader = () => {
   return (
-    <div className="w-full font-medium flex items-start justify-between mb-8">
+    <div className="w-full font-medium c-lg:flex items-start justify-between mb-8">
       {/* Left side - Salon info */}
-      <div className="w-full flex gap-3 justify-start items-center">
+      <div className="w-full c-lg:flex gap-3 justify-start items-center">
         
-        <div className="flex items-center gap-2 ">
+        <div className="flex items-center gap-2 c-lg:mt-0 c-xsm:mt-3">
           <div className="flex items-center gap-1">
             <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
             <span className="text-sm font-medium text-gray-700">4.9</span>
@@ -16,14 +16,14 @@ const SalonHeader = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-2 ">
+        <div className="flex items-center gap-2  c-lg:mt-0 c-xsm:mt-3">
           <Clock className="w-4 h-4 text-gray-500" />
           <span className="text-sm text-gray-600">
             Closed - opens on Thursday at 10:00 AM
           </span>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 c-lg:mt-0 c-xsm:mt-3">
           <MapPin className=" text-gray-500" />
           <span className="text-sm text-gray-600">
             Parañaque, 1702 Metro Manila, Parañaque
@@ -35,7 +35,7 @@ const SalonHeader = () => {
       </div>
 
       {/* Right side - Action buttons */}
-      <div className="flex shrink-0 items-center gap-3">
+      <div className="flex shrink-0 items-center gap-3 c-lg:mt-0 c-xsm:mt-3">
         <button className="p-2 rounded-full border border-gray-200 hover:bg-gray-50 transition-colors">
           <Share2 className="w-4 h-4 text-gray-600" />
         </button>
