@@ -66,7 +66,7 @@ const AboutSalonSection = () => {
       </div>
 
       {/* Opening Times and Additional Information */}
-      <table >
+      <table>
         <thead>
           <tr>
             <th className="text-start text-xl pb-2 font-semibold">Opening Times</th>

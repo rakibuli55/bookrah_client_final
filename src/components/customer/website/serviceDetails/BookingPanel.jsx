@@ -11,7 +11,7 @@ const BookingPanel = () => {
 
   // main render
   return (
-    <div className="bg-white rounded-lg border w-[450px] shrink-0 font-satoshi border-gray-200 p-6 sticky top-4">
+    <div className="bg-white rounded-lg border c-lg:w-[450px] shrink-0 font-satoshi border-gray-200 p-6 sticky top-4 c-lg:mt-0 c-xsm:mt-7">
       <h3 className="text-xl font-bold text-gray-900 mb-4">
         Daol Salon - Aseana
       </h3>

@@ -18,9 +18,9 @@ const ServiceDetailsPage = () => {
 
   return (
     <div className="bg-theme-bg">
-      <Container className="mt-36 font-satoshi pb-[104px]">
-        <div className="border-t border-[#D7CBBF] pt-[44px] pb-[130px]">
-          <div className=" flex items-center gap-2 text-muted font-satoshi font-medium text-sm mb-7">
+      <Container className="c-lg:mt-36 c-md:mt-[80px] c-xsm:mt-20 font-satoshi c-lg:pb-[104px]">
+        <div className="border-t border-[#D7CBBF] c-md:pt-[44px] c-ld:pb-[130px] c-md:pb-20 c-xsm:pb-[60px] c-xsm:pt-8">
+          <div className=" flex items-center gap-2 text-muted font-satoshi font-medium text-sm c-md:mb-7 c-xsm:mb-3">
             <p>Home</p>
             <div className="size-1.5 rounded-full bg-muted" />
             <p>Hair Salons</p>
@@ -28,16 +28,16 @@ const ServiceDetailsPage = () => {
             <p className="text-heading">Daol Salon - Aseana</p>
           </div>
           {/* Salon Name */}
-          <h1 className="font-semibold text-[44px] leading-[52px] mb-5">
+          <h1 className="font-semibold c-lg:text-[44px] c-md:text-[32px] c-xsm:text-[24px] leading-[52px] c-md:mb-5">
             Daol Salon - Aseana
           </h1>
           {/* Salon Header */}
           <SalonHeader />
           {/* Main Content Grid */}
-          <div className="w-full flex flex-col gap-12">
+          <div className="w-full c-lg:flex c-lg:flex-col gap-12">
             {/* Image Gallery */}
             <ImageGallery />
-            <div className="w-full flex gap-6 items-start justify-between">
+            <div className="w-full c-lg:flex gap-6 items-start justify-between c-lg:mt-0 c-xsm:mt-8">
               <div className='w-full flex flex-col gap-8 justify-start'>
                 {/* Services Section */}
                 <ServicesSection />
@@ -53,7 +53,7 @@ const ServiceDetailsPage = () => {
             </div>
           </div>
           {/* Bottom Carousels */}
-          <div className=" w-full mt-12 space-y-12">
+          <div className=" w-full mt-12 c-lg:space-y-12 c-xsm:space-y-8">
             <ServiceCarousel
               title="Other locations"
               services={servicesByLocation}

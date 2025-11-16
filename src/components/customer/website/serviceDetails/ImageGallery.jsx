@@ -73,10 +73,10 @@ const ImageGallery = () => {
   ];
 
   return (
-    <div className="w-full h-[580px] overflow-hidden flex justify-between items-start gap-6">
+    <div className="w-full c-lg:h-[580px] c-xsm:h-full c-lg:overflow-hidden c-lg:flex justify-between items-start gap-6">
 
       {/* Main Large Slider */}
-      <div className="w-[70%] h-full">
+      <div className="c-lg:w-[70%] c-xsm:w-full c-lg:h-full c-xsm:h-[250px]">
         <Swiper
           loop={true}
           spaceBetween={10}
@@ -100,7 +100,7 @@ const ImageGallery = () => {
       </div>
 
       {/* Thumbnail Slider (2 per view, vertical) */}
-      <div className="w-[30%] h-full">
+      <div className="c-lg:w-[30%] h-full c-lg:block c-xsm:hidden">
         <Swiper
           onSwiper={setThumbsSwiper}
           direction="vertical"
