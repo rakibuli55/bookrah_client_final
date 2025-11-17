@@ -1,6 +1,6 @@
-import Navbar from '@/shared/customer/Navbar';
-import Footer from '@/shared/Footer';
-import { Outlet, ScrollRestoration, useLocation } from 'react-router-dom';
+import Navbar from "@/shared/customer/Navbar";
+import Footer from "@/shared/Footer";
+import { Outlet, ScrollRestoration, useLocation } from "react-router-dom";
 
 const CustomerWebLayout = () => {
   const location = useLocation();
