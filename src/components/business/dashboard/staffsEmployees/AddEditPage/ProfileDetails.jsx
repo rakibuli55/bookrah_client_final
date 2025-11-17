@@ -20,7 +20,7 @@ const ProfileDetails = ({ register, errors, control, getValues }) => {
         {/* name area  */}
         <div className="grid c-md:grid-cols-2 c-md:items-start gap-5">
           <Fieldset
-            label="Frist Name"
+            label="First Name"
             type="text"
             id="first_name"
             placeholder="Enter your first name"
