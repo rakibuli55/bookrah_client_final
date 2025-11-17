@@ -48,7 +48,7 @@ const FaqSection = () => {
     },
   ];
   return (
-    <section className="c-lg:py-[104px] c-md:py-20 c-xsm:py-[60px]">
+    <section className="c-lg:py-[104px] c-md:py-20 c-xsm:py-[60px]" id="faq-section">
       <Container>
         {/* title  */}
         <SectionTitle

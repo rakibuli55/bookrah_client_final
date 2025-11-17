@@ -40,7 +40,7 @@ const CustomerSignUpPage = () => {
         {/* name area  */}
         <div className="grid grid-cols-2 items-start gap-5">
           <Fieldset
-            label="Frist Name"
+            label="First Name"
             type="text"
             id="first_name"
             placeholder="Enter your first name"
@@ -94,7 +94,6 @@ const CustomerSignUpPage = () => {
             id="email"
             placeholder="Enter your email"
             register={register}
-            requiredMessage="Email is required"
             required={{ value: true, message: 'Email is required' }}
             errors={errors}
           />
@@ -120,7 +119,7 @@ const CustomerSignUpPage = () => {
             id="password"
             placeholder="Enter a password"
             register={register}
-            requiredMessage="Password is required"
+            required={{ value: true, message: 'Password is required' }}
             errors={errors}
             confirmPasswordId="confirmPassword"
           />
@@ -134,7 +133,7 @@ const CustomerSignUpPage = () => {
             id="confirmPassword"
             placeholder="Retype password"
             register={register}
-            requiredMessage="Confirm password is required"
+            required={{ value: true, message: 'Confirm Password is required' }}
             errors={errors}
             password={getValues('password')}
           />

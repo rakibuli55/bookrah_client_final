@@ -8,24 +8,9 @@ import { Link } from "react-router-dom";
 const SocialMedia = ({ className }) => {
   const socialMedia = [
     {
-      id: 1,
-      name: "facebook",
-      path: "https://www.facebook.com",
-    },
-    {
-      id: 2,
-      name: "twitter",
-      path: "https://www.twitter.com",
-    },
-    {
       id: 3,
       name: "instagram",
       path: "https://www.instagram.com",
-    },
-    {
-      id: 4,
-      name: "youtube",
-      path: "https://www.youtube.com",
     },
     {
       id: 5,
@@ -34,7 +19,7 @@ const SocialMedia = ({ className }) => {
     },
   ];
 
-  const isMobileDeviceActive = useIsMobile(481)
+  const isMobileDeviceActive = useIsMobile(481);
 
   return (
     <ul className={`flex items-center c-md:gap-4 c-xsm:gap-3 ${className}`}>

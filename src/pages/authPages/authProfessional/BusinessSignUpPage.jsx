@@ -39,7 +39,7 @@ const BusinessSignUpPage = () => {
         {/* name area  */}
         <div className="grid c-md:grid-cols-2 items-start c-md:gap-3 c-xsm:gap-4">
           <Fieldset
-            label="Frist Name"
+            label="First Name"
             type="text"
             id="first_name"
             placeholder="Enter your first name"

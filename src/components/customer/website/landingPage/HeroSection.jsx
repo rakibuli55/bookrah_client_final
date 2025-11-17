@@ -11,14 +11,9 @@ import SearchBar from './heroSection/SearchBar';
 
 const backgrounds = [
   'https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?q=80&w=1170&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=1170&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?q=80&w=1170&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1649751295468-953038600bef?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   'https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?q=80&w=1170&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=1170&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?q=80&w=1170&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?q=80&w=1170&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=1170&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?q=80&w=1170&auto=format&fit=crop',
 ];
 
 const HeroSection = () => {
