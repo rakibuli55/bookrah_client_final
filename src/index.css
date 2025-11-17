@@ -496,8 +496,8 @@ button[data-slot="dialog-close"] {
 .web-footer .footer-box {
   @apply mt-[30px];
 }
-.web-footer .footer-box h4 {
-  @apply c-lg:text-[22px] c-sm:text-[18px] font-semibold text-white;
+.web-footer .footer-box .title {
+  @apply c-lg:text-[22px] font-playfair c-sm:text-[18px] font-semibold text-white duration-200 ease-in-out hover:text-primary;
 }
 .web-footer .footer-box p {
   @apply text-footer-para mt-[18px] c-lg:text-base c-xsm:text-sm;

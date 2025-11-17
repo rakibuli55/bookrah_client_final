@@ -38,7 +38,7 @@ const CustomerProfile = () => {
         {/* form */}
         <form className='w-full lg:mt-14 mt-2 flex flex-col justify-start gap-2 md:gap-4' onSubmit={handleSubmit(onSubmit)}>
           <Fieldset
-            label="Frist Name"
+            label="First Name"
             type="text"
             id="first_name"
             placeholder="Enter your first name"

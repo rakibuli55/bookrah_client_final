@@ -12,31 +12,50 @@ const Footer = () => {
           <div className="c-md:flex items-start c-lg:gap-20 c-sm:gap-4 c-lg:pb-[77px] c-xsm:pb-9">
             {/* about us  */}
             <div className="footer-box">
-              <h4>About us</h4>
+              <Link to={"/for-business/about-us"} className="title">
+                About us
+              </Link>
               <p>
                 Learn more about our mission to connect clients with top local
                 beauty and wellness professionals.
               </p>
             </div>
             <div className="footer-box">
-              <h4>FAQ</h4>
+              <Link
+                to={"#faq-section"}
+                className="title"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const section = document.getElementById("faq-section");
+                  section?.scrollIntoView({ top, behavior: "smooth" });
+                }}
+              >
+                FAQ
+              </Link>
               <p>
                 Have questions? Find answers to the most common inquiries from
                 clients and businesses.
               </p>
             </div>
             <div className="footer-box">
-              <h4>Terms & Conditions</h4>
+              <Link to={"/terms-conditions"} className="title">
+                Terms & Conditions
+              </Link>
               <p>
                 Read the terms that govern the use of our platform for both
                 service providers and clients.
               </p>
             </div>
             <div className="footer-box">
-              <h4>Contact Us</h4>
+              <Link to={"/contact"} className="title">
+                Contact Us
+              </Link>
               <p>
                 Need help or support? Reach out to us directly at
-                <a href="mailto:contact@bookrah.com" className="text-primary hover:underline">
+                <a
+                  href="mailto:contact@bookrah.com"
+                  className="text-primary hover:underline"
+                >
                   {" "}
                   contact@bookrah.com
                 </a>
@@ -53,7 +72,7 @@ const Footer = () => {
               Copyright © 2025 Bookrah. All Rights Reserved
             </p>
             {/* social media  */}
-            <SocialMedia className={'text-[24px] text-white'} />
+            <SocialMedia className={"text-[24px] text-white"} />
           </div>
         </div>
       </Container>
