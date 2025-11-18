@@ -50,7 +50,7 @@ const DateFilter = () => {
         className="w-auto overflow-hidden p-0"
         align="end"
         alignOffset={-25}
-        sideOffset={30}
+        sideOffset={22}
       >
         <div className="flex gap-2 items-center px-4 py-3">
           <div

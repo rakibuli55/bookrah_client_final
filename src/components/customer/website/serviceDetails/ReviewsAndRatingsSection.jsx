@@ -35,19 +35,19 @@ const ReviewsAndRatingsSection = () => {
   ];
   // main render
   return (
-    <div className="w-full  gap-6 flex flex-col justify-start items-start pb-10 border-b border-primary">
+    <div className="w-full c-md:gap-6 c-xsm:gap-3 flex flex-col justify-start items-start pb-10 border-b border-primary">
       {/** Step title */}
-      <div className="flex w-full gap-4 items-center justify-between ">
+      <div className="c-md:flex w-full gap-4 items-center justify-between ">
         {/** Step title */}
         <StepTitle title={'Reviews & Ratings'} />
-        <div className='flex justify-end items-center gap-1 font-bold'>
+        <div className='flex c-md:justify-end items-center gap-1 font-bold c-md:text-base c-xsm:text-sm c-md:mt-0 c-xsm:mt-2'>
           <span>4.9</span>
           <span className='text-primary'>(350)</span>
           <StarRating rating={4.9} />
         </div>
       </div>
       {/** Reviews */}
-      <div className="w-full mt-4 c-lg:grid grid-cols-2 gap-x-20 gap-y-6">
+      <div className="w-full mt-4 c-lg:grid grid-cols-2 c-xxl:gap-x-20 c-lg:gap-x-10 c-md:gap-x-8 gap-y-6">
         {reviews.map((review) => (
           <div key={review.id} className="border-b border-gray-200 pb-6 last:border-b-0 c-lg:mt-0 c-xsm:mt-5">
             <div className="flex flex-col w-full items-start gap-3">

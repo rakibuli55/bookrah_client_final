@@ -60,9 +60,9 @@ const ChangeProfessional = ({ bookingInfo, handleBookingInfoChange }) => {
             {/* Animated Dropdown */}
             <div
                 className={`
-          absolute top-12 left-1/2 -translate-x-1/2 w-4xl bg-white 
-          shadow-lg rounded-xl p-6 grid grid-cols-3 gap-4 z-50
-          transition-all duration-300 ease-out origin-top
+          absolute top-12 c-lg:left-1/2 c-xsm:left-0 c-lg:-translate-x-1/2 c-lg:w-4xl c-md:w-[340px] c-md:left-[-200px] c-lg:max-h-[600px] c-xsm:max-h-[500px] c-xsm:overflow-y-auto c-xsm:w-[325px] bg-white 
+          shadow-lg rounded-xl c-lg:p-6 c-xsm:p-4 grid c-lg:grid-cols-3 c-xsm:grid-cols-1 gap-4 z-50
+          transition-all duration-300 ease-out origin-top default-scrollbar
           ${isOpen
                         ? 'opacity-100 scale-y-100 translate-y-0 visible'
                         : 'opacity-0 scale-y-95 -translate-y-2 invisible'

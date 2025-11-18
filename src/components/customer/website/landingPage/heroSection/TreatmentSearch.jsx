@@ -73,7 +73,7 @@ const TreatmentSearch = () => {
       </PopoverTrigger>
       <PopoverContent
         className="p-4 max-h-[50svh] overflow-y-scroll"
-        sideOffset={32}
+        sideOffset={22}
       >
         {filteredTreatments.length > 0 && (
           <div className="mb-4">

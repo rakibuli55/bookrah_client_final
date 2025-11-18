@@ -18,7 +18,7 @@ const backgrounds = [
 
 const HeroSection = () => {
   return (
-    <section className="relative c-lg:h-[95svh] c-xsm:h-auto c-md:py-20 c-xsm:py-16 bg-black">
+    <section className="relative c-lg:h-[95svh] c-xsm:h-auto c-md:py-20 c-xsm:pb-16 c-xsm:pt-11 bg-black">
       {/* Swiper Background */}
       <div className="absolute inset-0">
         <Swiper
@@ -55,11 +55,11 @@ const HeroSection = () => {
       <Container className="relative h-full flex flex-col justify-center pt-10 z-20">
         <div className="c-lg:space-y-14 c-xsm:space-y-8">
           <div className="space-y-6 text-white max-w-2xl 2xl:max-w-6xl">
-            <h1 className="text-2xl min-[400px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-playfair font-semibold leading-[162%] tracking-[-2%]">
+            <h1 className="text-2xl min-[400px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-playfair font-semibold c-md:leading-[162%] tracking-[-2%]">
               Book your next beauty or wellness experience — in seconds
             </h1>
 
-            <p className="c-lg:text-xl leading-[170%] tracking-[-2%] max-w-2xl font-satoshi text-gray-200">
+            <p className="c-lg:text-xl c-md:leading-[170%] tracking-[-2%] max-w-2xl font-satoshi text-gray-200">
               Discover handpicked salons, barbers, and spas across your favorite destinations.
               Enjoy exclusive deals, fast booking, and 24/7 support.
             </p>

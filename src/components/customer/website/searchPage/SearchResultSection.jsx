@@ -20,7 +20,7 @@ import { getServicesByLocation } from '@/data/mockServices';
 
 const SearchResultSection = () => {
   return (
-    <Container className="c-lg:mt-36 c-md:mt-20 c-xsm:mt-18 min-h-screen">
+    <Container className="c-xxl:mt-34 c-lg:mt-33 c-md:mt-[80px] c-xsm:mt-17 min-h-screen">
       <div className="border-t border-[#D7CBBF] c-md:pt-[44px] c-xsm:pt-10 c-lg:pb-[130px] c-md:pb-20 c-xsm:pb-[60px]">
         <div className="flex items-center gap-2 text-muted font-satoshi font-medium text-sm c-md:mb-7 c-xsm:mb-4">
           <p>Home</p>

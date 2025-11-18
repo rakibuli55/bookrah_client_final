@@ -18,9 +18,9 @@ const ServiceDetailsPage = () => {
 
   return (
     <div className="bg-theme-bg">
-      <Container className="c-lg:mt-36 c-md:mt-[80px] c-xsm:mt-20 font-satoshi c-lg:pb-[104px]">
-        <div className="border-t border-[#D7CBBF] c-md:pt-[44px] c-ld:pb-[130px] c-md:pb-20 c-xsm:pb-[60px] c-xsm:pt-8">
-          <div className=" flex items-center gap-2 text-muted font-satoshi font-medium text-sm c-md:mb-7 c-xsm:mb-3">
+      <Container className="c-xxl:mt-34 c-lg:mt-33 c-md:mt-[80px] c-xsm:mt-17 font-satoshi c-lg:pb-[0px]">
+        <div className="border-t border-[#D7CBBF] c-md:pt-[44px] c-lg:pb-14 c-md:pb-18 c-xsm:pb-[60px] c-xsm:pt-8">
+          <div className=" flex items-center gap-2 text-muted font-satoshi font-medium text-sm c-lg:mb-7 c-xsm:mb-3">
             <p>Home</p>
             <div className="size-1.5 rounded-full bg-muted" />
             <p>Hair Salons</p>
@@ -28,7 +28,7 @@ const ServiceDetailsPage = () => {
             <p className="text-heading">Daol Salon - Aseana</p>
           </div>
           {/* Salon Name */}
-          <h1 className="font-semibold c-lg:text-[44px] c-md:text-[32px] c-xsm:text-[24px] leading-[52px] c-md:mb-5">
+          <h1 className="font-semibold c-lg:text-[44px] c-md:text-[32px] c-xsm:text-[24px] c-md:leading-[52px] c-lg:mb-5">
             Daol Salon - Aseana
           </h1>
           {/* Salon Header */}
