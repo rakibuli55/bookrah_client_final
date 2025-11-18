@@ -10,10 +10,10 @@ const TeamMembersSection = () => {
   ]
 
   return (
-    <div className="w-full border-t border-b border-primary py-10 gap-6 flex flex-col justify-start items-start">
+    <div className="w-full border-t border-b border-primary c-md:py-10 c-xsm:py-8 gap-6 flex flex-col justify-start items-start">
       {/** Step title */}
       <StepTitle title={'Team Members'} />
-      <div className="grid w-full grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 my-6">
+      <div className="grid w-full c-xxxl:grid-cols-6 c-xxl:grid-cols-4 c-xl:grid-cols-5 c-lg:grid-cols-4 c-md:grid-cols-5 c-xsm:grid-cols-3 gap-4 c-md:my-6 c-xsm:mt-2">
         {teamMembers.map((professional) => (
           <div
             key={professional.id}

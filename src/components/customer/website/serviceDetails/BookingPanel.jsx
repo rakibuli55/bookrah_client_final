@@ -11,20 +11,20 @@ const BookingPanel = () => {
 
   // main render
   return (
-    <div className="bg-white rounded-lg border c-lg:w-[450px] shrink-0 font-satoshi border-gray-200 p-6 sticky top-4 c-lg:mt-0 c-xsm:mt-7">
-      <h3 className="text-xl font-bold text-gray-900 mb-4">
+    <div className="bg-white rounded-lg border c-lg:w-[450px] shrink-0 font-satoshi border-gray-200 c-md:p-6 c-xsm:p-4 sticky top-4 c-lg:mt-0 c-xsm:mt-7">
+      <h3 className="text-xl font-bold text-gray-900 c-md:mb-4 c-xsm:mb-2">
         Daol Salon - Aseana
       </h3>
       {/* Rating */}
       <div className="flex items-center font-semibold gap-1 mb-4">
-        <StarRating className='text-xl' rating={4.9} />
+        <StarRating className='c-md:text-xl' rating={4.9} />
         <span className="text-base  text-gray-700 ml-1">
           4.9
         </span>
         <span className='text-primary'>(350)</span>
       </div>
       {/* Book now button */}
-      <button type="button" onClick={handleBooking} className="w-full cursor-pointer bg-primary text-gray-900 py-3 rounded-lg font-semibold hover:opacity-90 transition-colors mb-6">
+      <button type="button" onClick={handleBooking} className="w-full cursor-pointer bg-primary text-gray-900 c-md:py-3 c-xsm:py-2 rounded-lg font-semibold hover:opacity-90 transition-colors mb-6">
         Book now
       </button>
       {/* Operating hours */}

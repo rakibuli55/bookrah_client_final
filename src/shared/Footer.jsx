@@ -63,7 +63,7 @@ const Footer = () => {
             </div>
           </div>
           {/* footer bottom  */}
-          <div className="c-md:pt-12 c-xsm:py-10 c-md:pb-[60px] border-t border-[rgba(255,255,255,0.14)] flex c-md:flex-row c-md:items-center c-md:justify-between c-xsm:flex-col c-xsm:justify-center c-xsm:items-center c-xsm:gap-4">
+          <div className="c-md:pt-10 c-xsm:py-10 c-md:pb-10 border-t border-[rgba(255,255,255,0.14)] flex c-md:flex-row c-md:items-center c-md:justify-between c-xsm:flex-col c-xsm:justify-center c-xsm:items-center c-xsm:gap-4">
             <Link to={"/"} className="inline-block logo-width">
               <img className="w-full h-full" src={Logo} alt="Logo" />
             </Link>

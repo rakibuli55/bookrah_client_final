@@ -1,7 +1,7 @@
 import Header from '@/shared/customer/Header'
 import Sidebar from '@/shared/customer/Sidebar'
 import React, { useState } from 'react'
-import { Outlet } from 'react-router-dom'
+import { Outlet, ScrollRestoration } from 'react-router-dom'
 
 const CustomerDashboardLayout = () => {
     // sidebar toggle
@@ -11,6 +11,7 @@ const CustomerDashboardLayout = () => {
 
     return (
         <div className='w-full flex'>
+            <ScrollRestoration></ScrollRestoration>
             <Sidebar open={open} toggle={toggle} />
             <div className='w-full h-screen flex flex-col'>
                 <Header open={open} toggle={toggle} />

@@ -32,7 +32,7 @@ const SearchBar = () => {
     if (!activeDropdown) return null;
 
     return (
-      <div className="absolute top-full left-0 w-full bg-white rounded-lg shadow-lg mt-2 z-50">
+      <div className="absolute c-md:top-full c-xsm:top-[75%] left-0 w-full bg-white rounded-lg shadow-lg mt-2 z-50">
         {activeDropdown === 'time' && (
           <div className="p-4">
             <div className="flex c-lg:flex-row c-xsm:flex-col gap-2 mb-4">

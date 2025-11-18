@@ -57,9 +57,9 @@ const ServicesSection = () => {
         ))}
       </div>
       {/* Services List */}
-      <div className="w-full flex flex-col gap-4 lg:gap-5 justify-start items-start">
+      <div className="w-full flex flex-col gap-4 lg:gap-5 justify-start items-start c-lg:mt-0 c-xsm:mt-3">
         <p className="font-semibold text-xl font-playfair">{activeCategory}</p>
-        <div className="w-full grid grid-cols-1 gap-5 max-h-[400px] lg:max-h-none overflow-y-auto pr-2">
+        <div className="w-full grid grid-cols-1 c-lg:gap-5 c-xsm:gap-4 c-lg:max-h-[400px] lg:max-h-none overflow-y-auto pr-2">
           {
             services.map((service) => (
               <button type="button" className={`hover:shadow-2xs overflow-hidden flex relative flex-col justify-start items-start gap-3 bg-white rounded-xl cursor-pointer transition-all duration-300 text-heading ease-in-out md:px-6 md:py-5 p-3 w-full  $`} key={service.id}>
@@ -68,7 +68,7 @@ const ServicesSection = () => {
                   <p className="md:text-sm text-xs text-[#767676]">{service.duration}</p>
                 </div>
                 <p className="font-semibold text-xs"> ₱{service.price} </p>
-                <Link className="absolute top-4 right-4 rounded-full border text-black font-medium text-lg px-4 py-1 cursor-pointer ">
+                <Link className="absolute top-4 right-4 rounded-full border text-black font-medium c-md:text-lg px-4 py-1 cursor-pointer ">
                   Book
                 </Link>
               </button>
