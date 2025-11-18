@@ -49,8 +49,8 @@ const DateFilter = () => {
       <PopoverContent
         className="w-auto overflow-hidden p-0"
         align="end"
-        alignOffset={-8}
-        sideOffset={10}
+        alignOffset={-25}
+        sideOffset={30}
       >
         <div className="flex gap-2 items-center px-4 py-3">
           <div
