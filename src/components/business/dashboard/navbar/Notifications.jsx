@@ -62,7 +62,7 @@ const Notifications = () => {
       </div>
       {/* notifications dropdown  */}
       <ul
-        className={`bg-white rounded-[12px] py-3 absolute right-0 w-[350px] shadow duration-200 ease-in-out  ${
+        className={`bg-white rounded-[12px] py-3 absolute c-md:right-0 c-xsm:right-[-50px] c-md:w-[350px] c-xsm:w-[320px] shadow duration-200 ease-in-out  ${
           isDropdownOpen ? "top-12 opacity-100 visible" : "top-13 opacity-0 invisible"
         }`}
       >

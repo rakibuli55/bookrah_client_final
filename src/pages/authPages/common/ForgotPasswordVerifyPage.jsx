@@ -131,7 +131,7 @@ const ForgotPasswordVerifyPage = () => {
       />
 
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="flex justify-center space-x-5 mb-6">
+        <div className="flex justify-center c-md:space-x-5 c-xsm:space-x-3 mb-6">
           {otp.map((digit, index) => (
             <input
               key={index}
@@ -142,7 +142,7 @@ const ForgotPasswordVerifyPage = () => {
               value={digit}
               onChange={(e) => handleOtpChange(index, e.target.value)}
               onKeyDown={(e) => handleKeyDown(index, e)}
-              className="w-16 h-16 text-center text-lg font-semibold border-2 border-gray-300 rounded-lg focus:border-primary focus:outline-none transition-colors"
+              className="c-lg:w-16 c-md:w-13 c-lg:h-16 c-md:h-13 c-xsm:w-10 c-xsm:h-10 text-center text-lg font-semibold border-2 border-gray-300 rounded-lg focus:border-primary focus:outline-none transition-colors"
             />
           ))}
         </div>
@@ -160,7 +160,7 @@ const ForgotPasswordVerifyPage = () => {
           <PrimaryButton
             type="submit"
             text={isLoading ? 'Submitting...' : 'Submit'}
-            className="w-[276px] mx-auto block mb-[160px]"
+            className="w-[276px] mx-auto block c-lg:mb-[160px] c-md:mb-10 c-xsm:mb-7"
             disabled={isLoading || otp.join('').length !== 6}
           />
 

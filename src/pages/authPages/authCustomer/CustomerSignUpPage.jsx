@@ -1,11 +1,11 @@
-import Divider from '@/components/auth/Divider';
-import GoogleSocialLogin from '@/components/auth/GoogleSocialLogin';
-import { useEffect } from 'react';
-import { useForm } from 'react-hook-form';
-import { Link, useNavigate } from 'react-router-dom';
-import AuthTitle from '../../../components/auth/AuthTitle';
-import Fieldset from '../../../components/auth/Fieldset';
-import PrimaryButton from '../../../components/common/PrimaryButton';
+import Divider from "@/components/auth/Divider";
+import GoogleSocialLogin from "@/components/auth/GoogleSocialLogin";
+import { useEffect } from "react";
+import { useForm } from "react-hook-form";
+import { Link, useNavigate } from "react-router-dom";
+import AuthTitle from "../../../components/auth/AuthTitle";
+import Fieldset from "../../../components/auth/Fieldset";
+import PrimaryButton from "../../../components/common/PrimaryButton";
 
 const CustomerSignUpPage = () => {
   const navigate = useNavigate();
@@ -19,26 +19,26 @@ const CustomerSignUpPage = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    navigate('/auth/signup/otp-verification?role=customer');
+    navigate("/auth/signup/otp-verification?role=customer");
   };
 
   // manually trigger validation for confirm pass if fill with fake filler
   useEffect(() => {
-    if (getValues('password') && getValues('confirmPassword')) {
-      trigger('confirmPassword');
+    if (getValues("password") && getValues("confirmPassword")) {
+      trigger("confirmPassword");
     }
-  }, [getValues('password'), getValues('confirmPassword')]);
+  }, [getValues("password"), getValues("confirmPassword")]);
 
   return (
     <div>
       <AuthTitle
         title="Sign Up"
         subTitle="Fill In the Form"
-        className={'text-center'}
+        className={"text-center"}
       />
       <form onSubmit={handleSubmit(onSubmit)}>
         {/* name area  */}
-        <div className="grid grid-cols-2 items-start gap-5">
+        <div className="grid c-lg:grid-cols-2 items-start gap-5">
           <Fieldset
             label="First Name"
             type="text"
@@ -46,7 +46,7 @@ const CustomerSignUpPage = () => {
             placeholder="Enter your first name"
             register={register}
             requiredMessage="First name is required"
-            required={{ value: true, message: 'First name is required' }}
+            required={{ value: true, message: "First name is required" }}
             errors={errors}
           />
           <Fieldset
@@ -56,7 +56,7 @@ const CustomerSignUpPage = () => {
             placeholder="Enter your last name"
             register={register}
             requiredMessage="Last name is required"
-            required={{ value: true, message: 'Last name is required' }}
+            required={{ value: true, message: "Last name is required" }}
             errors={errors}
           />
         </div>
@@ -94,7 +94,7 @@ const CustomerSignUpPage = () => {
             id="email"
             placeholder="Enter your email"
             register={register}
-            required={{ value: true, message: 'Email is required' }}
+            required={{ value: true, message: "Email is required" }}
             errors={errors}
           />
         </div>
@@ -119,7 +119,7 @@ const CustomerSignUpPage = () => {
             id="password"
             placeholder="Enter a password"
             register={register}
-            required={{ value: true, message: 'Password is required' }}
+            required={{ value: true, message: "Password is required" }}
             errors={errors}
             confirmPasswordId="confirmPassword"
           />
@@ -133,9 +133,9 @@ const CustomerSignUpPage = () => {
             id="confirmPassword"
             placeholder="Retype password"
             register={register}
-            required={{ value: true, message: 'Confirm Password is required' }}
+            required={{ value: true, message: "Confirm Password is required" }}
             errors={errors}
-            password={getValues('password')}
+            password={getValues("password")}
           />
         </div>
         {/* privacy policy  */}
@@ -145,14 +145,17 @@ const CustomerSignUpPage = () => {
               type="checkbox"
               id="policy"
               name="policy"
-              {...register('policy', {
-                required: 'Terms and policy is required',
+              {...register("policy", {
+                required: "Terms and policy is required",
               })}
             />
-            <label htmlFor="policy">
-              I agree to the <Link to={'/'}>Privacy Policy</Link>,{' '}
-              <Link to={'/'}>Terms of Service</Link> and{' '}
-              <Link to={'/'}>Terms of Business</Link>.
+            <label
+              htmlFor="policy"
+              className="c-xxl:text-base c-xsm:text-sm c-xsm:block business-signIn-checkbox"
+            >
+              I agree to the <Link to={"/"}>Privacy Policy</Link>,{" "}
+              <Link to={"/"}>Terms of Service</Link> and{" "}
+              <Link to={"/"}>Terms of Business</Link>.
             </label>
           </div>
           {errors.policy && (
@@ -162,18 +165,18 @@ const CustomerSignUpPage = () => {
         {/* Submit Button */}
         <div>
           <PrimaryButton
-            className={'text-center w-full mt-8'}
-            text={'Sign Up'}
+            className={"text-center w-full mt-8"}
+            text={"Sign Up"}
           />
         </div>
       </form>
-      <Divider text={'Or'} />
+      <Divider text={"Or"} />
       <div className="mt-10">
         <GoogleSocialLogin />
       </div>
-      <p className="text-[20px] font-bold text-center mt-10">
+      <p className="c-lg:text-[20px] c-md:text-[18px] c-xsm:text-base font-bold text-center c-lg:mt-10 c-xsm:mt-5">
         <span>Already have an account? </span>
-        <Link to={'/auth/sign-in'} className="text-primary">
+        <Link to={"/auth/sign-in"} className="text-primary">
           Sign In
         </Link>
       </p>
