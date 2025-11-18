@@ -4,7 +4,7 @@ import { HiMiniXMark } from "react-icons/hi2";
 import { IoArrowBackOutline } from "react-icons/io5";
 const Header = ({ step, setStep, handlePrev }) => {
     return (
-        <div className="w-full flex border-b border-[#D7CBBF] pb-6 justify-between items-center gap-5">
+        <div className="w-full flex border-b border-[#D7CBBF] c-md:pb-6 c-xsm:pb-3 justify-between items-center gap-5">
             <Link to={"/"} className="inline-block logo-width">
                 <img className="w-full h-full" src={Logo} alt="Logo" />
             </Link>

@@ -15,7 +15,7 @@ const TermsConditionsPage = () => {
         />
         <div className="absolute inset-0 bg-black/50"></div>
         <Container className="relative z-10">
-          <div className="text-center">
+          <div className="text-center font-satoshi">
             <h1 className="text-[#adadad] text-xl md:text-2xl lg:text-3xl font-light mb-4">
               Understanding Our
             </h1>
@@ -28,12 +28,12 @@ const TermsConditionsPage = () => {
       </section>
 
       {/* Content Section */}
-      <section className="c-md:py-[80px] c-xsm:py-[60px] bg-[#F8F6F0]">
+      <section className="c-md:py-[80px] c-xsm:py-[60px] bg-[#F8F6F0] font-satoshi">
         <Container>
-          <div className="max-w-4xl mx-auto c-md:space-y-8">
+          <div className="max-w-4xl mx-auto c-md:space-y-8 c-xsm:space-y-7">
             {/* Introduction */}
             <div>
-              <h3 className="c-xsm:text-[18px] c-md:text-2xl font-bold text-gray-800 mb-4">
+              <h3 className="c-xsm:text-[18px] c-md:text-2xl font-bold text-gray-800 c-md:mb-4 c-xsm:mb-3">
                 Introduction
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -45,7 +45,7 @@ const TermsConditionsPage = () => {
 
             {/* Services */}
             <div>
-              <h3 className="c-xsm:text-[18px] c-md:text-2xl font-bold text-gray-800 mb-4">
+              <h3 className="c-xsm:text-[18px] c-md:text-2xl font-bold text-gray-800 c-md:mb-4 c-xsm:mb-3">
                 Services
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -57,7 +57,7 @@ const TermsConditionsPage = () => {
 
             {/* User Accounts */}
             <div>
-              <h3 className="c-xsm:text-[18px] c-md:text-2xl font-bold text-gray-800 mb-4">
+              <h3 className="c-xsm:text-[18px] c-md:text-2xl font-bold text-gray-800 c-md:mb-4 c-xsm:mb-3">
                 User Accounts
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -68,7 +68,7 @@ const TermsConditionsPage = () => {
 
             {/* Booking and Payment */}
             <div>
-              <h3 className="c-xsm:text-[18px] c-md:text-2xl font-bold text-gray-800 mb-4">
+              <h3 className="c-xsm:text-[18px] c-md:text-2xl font-bold text-gray-800 c-md:mb-4 c-xsm:mb-3">
                 Booking and Payment
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -80,7 +80,7 @@ const TermsConditionsPage = () => {
 
             {/* Liability */}
             <div>
-              <h3 className="c-xsm:text-[18px] c-md:text-2xl font-bold text-gray-800 mb-4">
+              <h3 className="c-xsm:text-[18px] c-md:text-2xl font-bold text-gray-800 c-md:mb-4 c-xsm:mb-3">
                 Liability
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -92,7 +92,7 @@ const TermsConditionsPage = () => {
 
             {/* Privacy */}
             <div>
-              <h3 className="c-xsm:text-[18px] c-md:text-2xl font-bold text-gray-800 mb-4">Privacy</h3>
+              <h3 className="c-xsm:text-[18px] c-md:text-2xl font-bold text-gray-800 c-md:mb-4 c-xsm:mb-3">Privacy</h3>
               <p className="text-gray-700 leading-relaxed">
                 User information is handled according to our Privacy Policy,
                 ensuring data protection and confidentiality.
@@ -101,7 +101,7 @@ const TermsConditionsPage = () => {
 
             {/* Changes to Terms */}
             <div>
-              <h3 className="c-xsm:text-[18px] c-md:text-2xl font-bold text-gray-800 mb-4">
+              <h3 className="c-xsm:text-[18px] c-md:text-2xl font-bold text-gray-800 c-md:mb-4 c-xsm:mb-3">
                 Changes to Terms
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -113,7 +113,7 @@ const TermsConditionsPage = () => {
 
             {/* Contact */}
             <div>
-              <h3 className="c-xsm:text-[18px] c-md:text-2xl font-bold text-gray-800 mb-4">Contact</h3>
+              <h3 className="c-xsm:text-[18px] c-md:text-2xl font-bold text-gray-800 c-md:mb-4 c-xsm:mb-3">Contact</h3>
               <p className="text-gray-700 leading-relaxed">
                 For questions about these Terms, contact us at
                 contact@bookrah.com.

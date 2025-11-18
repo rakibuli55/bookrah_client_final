@@ -60,7 +60,7 @@ const LocationSearch = () => {
       </PopoverTrigger>
       <PopoverContent
         className="p-4 max-h-[50svh] overflow-y-scroll"
-        sideOffset={32}
+        sideOffset={22}
       >
         <div className="mb-4">
           <h3 className="font-bold text-lg mb-2 font-playfair">Suggested</h3>

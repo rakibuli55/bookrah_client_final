@@ -58,7 +58,7 @@ const Services = ({ handleBookingInfoChange, bookingInfo }) => {
             {/* Services List */}
             <div className="w-full flex flex-col gap-4 lg:gap-5 justify-start items-start">
                 <p className="font-semibold text-xl font-playfair">{activeCategory}</p>
-                <div className="w-full grid grid-cols-1 gap-5 max-h-[400px] lg:max-h-none overflow-y-auto pr-2">
+                <div className="w-full grid grid-cols-1 c-md:gap-5 c-xsm:gap-4 c-md:max-h-[400px] lg:max-h-none overflow-y-auto pr-2">
                     {
                         services.map((service) => (
                             <button type="button" onClick={() => handleBookingInfoChange("service", service)} className={`border overflow-hidden flex relative flex-col justify-start items-start gap-3 bg-white rounded-xl cursor-pointer transition-all duration-300 text-heading ease-in-out md:px-6 md:py-5 p-3 w-full  ${bookingInfo.service?.id === service.id ? 'border-primary' : 'border-transparent'}`} key={service.id}>
