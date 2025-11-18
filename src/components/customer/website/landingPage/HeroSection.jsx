@@ -18,7 +18,7 @@ const backgrounds = [
 
 const HeroSection = () => {
   return (
-    <section className="relative c-lg:h-[95svh] c-md:py-20 c-xsm:py-16 bg-black overflow-hidden">
+    <section className="relative c-lg:h-[95svh] c-md:py-20 c-xsm:py-16 bg-black">
       {/* Swiper Background */}
       <div className="absolute inset-0">
         <Swiper

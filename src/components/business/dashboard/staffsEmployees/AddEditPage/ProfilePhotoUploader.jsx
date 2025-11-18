@@ -58,7 +58,7 @@ const ProfilePhotoUploader = ({ register, errors }) => {
         </label>
       </div>
       {errors.profileAvatar && (
-        <p className="error-message">{errors.profileAvatar.message}</p>
+        <p className="error-message c-xsm:whitespace-nowrap">{errors.profileAvatar.message}</p>
       )}
     </div>
   );

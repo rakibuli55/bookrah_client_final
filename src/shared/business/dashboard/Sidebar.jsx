@@ -183,6 +183,7 @@ const Sidebar = () => {
               ? "text-primary"
               : ""
           }`}
+          onClick={() => dispatch(handleMobileSidebar(false))}
         >
           <span className="text-[20px]">
             <RiSettingsLine />
