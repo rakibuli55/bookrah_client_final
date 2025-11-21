@@ -82,7 +82,6 @@ const TestimonialSection = () => {
       <Container className={'relative'}>
         {/* title  */}
         <SectionTitle
-          subTitle={"Testimonials"}
           title={"Top-rated by the industry"}
           desc={
             "Being the world's most-loved platform doesn't happen by accident. Our dedication to building the best-in-class booking software and delivering exceptional customer experience continues to be recognised in the industry time and time again."
