@@ -146,7 +146,6 @@ const ProfileDetails = ({ register, errors, control, getValues }) => {
                       <SelectGroup>
                         <SelectItem value="male">Male</SelectItem>
                         <SelectItem value="female">Female</SelectItem>
-                        <SelectItem value="others">Others</SelectItem>
                       </SelectGroup>
                     </SelectContent>
                   </Select>

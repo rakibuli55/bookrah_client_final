@@ -10,7 +10,12 @@ import { useLocation } from "react-router-dom";
 
 const DashNavbar = () => {
   const location = useLocation();
-  const crrentLocation = location.pathname.split("/").filter(Boolean).pop();
+  const currentLocation = location.pathname
+  .split("/")
+  .filter(Boolean)
+  .pop()
+  .replace(/-/g, " ");
+
   const isMobileSidebarActive = useSelector(
     (state) => state.sidebarSlice.mobileSidebarActive
   );
@@ -24,7 +29,7 @@ const DashNavbar = () => {
         <div>
           <BreadcrumbCustom />
           <h1 className="title--sm font-satoshi capitalize !font-bold">
-            {crrentLocation}
+            {currentLocation}
           </h1>
         </div>
         {/* profile and notification  */}

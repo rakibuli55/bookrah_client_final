@@ -16,9 +16,6 @@ const TermsConditionsPage = () => {
         <div className="absolute inset-0 bg-black/50"></div>
         <Container className="relative z-10">
           <div className="text-center font-satoshi">
-            <h1 className="text-[#adadad] text-xl md:text-2xl lg:text-3xl font-light mb-4">
-              Understanding Our
-            </h1>
             <h2 className="text-white c-xsm:text-3xl c-md:text-[38px] lg:text-6xl xl:text-7xl font-bold leading-tight">
               Terms &<br />
               Conditions

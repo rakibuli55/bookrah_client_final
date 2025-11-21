@@ -15,7 +15,7 @@ const TaskManagmentSection = () => {
             "Stay organized, prioritize with ease, and get things done faster. Our all-in-one task management tool keeps your team aligned and on track."
           }
           btnText={"register your business"}
-          btnPath={"/"}
+          btnPath={"/auth/business-signup"}
           className={"text-center c-xxl:w-[856px] c-lg:w-[780px] c-md:w-[600px] c-sm:w-full mx-auto"}
           isCenterDesc={true}
         />
