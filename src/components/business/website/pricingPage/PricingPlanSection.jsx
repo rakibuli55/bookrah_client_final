@@ -11,7 +11,6 @@ const PricingPlanSection = () => {
       id: "plan_1",
       card: {
         name: "Essence plan",
-        description: "Lorem ipsum lorem sum",
         price: {
           current: 69,
           original: 129,
@@ -20,11 +19,12 @@ const PricingPlanSection = () => {
         billingCycle: "/per month",
         cta: "Get Now",
         features: [
-          "Lorem ipsum",
-          "Lorem ipsum",
-          "Lorem ipsum",
-          "Lorem ipsum",
-          "Lorem ipsum",
+          "Business Profile Listing",
+          "Online Booking",
+          "Email & SMS to Clients",
+          "SMS to Employees",
+          "Employee Profiles: 3",
+          "Support: Standard",
         ],
       },
     },
@@ -32,7 +32,6 @@ const PricingPlanSection = () => {
       id: "plan_2",
       card: {
         name: "Advanced plan",
-        description: "Lorem ipsum lorem sum",
         price: {
           current: 99,
           original: 179,
@@ -41,11 +40,12 @@ const PricingPlanSection = () => {
         billingCycle: "/per month",
         cta: "Get Now",
         features: [
-          "Lorem ipsum",
-          "Lorem ipsum",
-          "Lorem ipsum",
-          "Lorem ipsum",
-          "Lorem ipsum",
+          "Business Profile Listing",
+          "Online Booking",
+          "Email & SMS to Clients",
+          "SMS to Employees",
+          "Employee Profiles: 10",
+          "Support: Standard",
         ],
       },
     },
@@ -53,7 +53,6 @@ const PricingPlanSection = () => {
       id: "plan_3",
       card: {
         name: "Exclusive plan",
-        description: "Lorem ipsum lorem sum",
         price: {
           current: 149,
           original: 249,
@@ -62,11 +61,13 @@ const PricingPlanSection = () => {
         billingCycle: "/per month",
         cta: "Get Now",
         features: [
-          "Lorem ipsum",
-          "Lorem ipsum",
-          "Lorem ipsum",
-          "Lorem ipsum",
-          "Lorem ipsum",
+          "Business Profile Listing",
+          "Online Booking",
+          "Email & SMS to Clients",
+          "SMS to Employees",
+          "Priority Exposure on Homepage Category “New”",
+          "Employee Profiles: 11-30",
+          "Support: Priority",
         ],
       },
     },

@@ -10,9 +10,6 @@ const PricingCard = ({ plan, halfIndex, index }) => {
       <h4 className="text-[20px] duration-300 ease-in-out font-satoshi text-heading font-medium">
         {plan?.card?.name}
       </h4>
-      <p className="text-base duration-300 ease-in-out text-paragraph mt-[2px]">
-        {plan?.card?.description}
-      </p>
       {/* price  */}
       <div className="font-satoshi c-sm:my-6 c-xsm:py-5">
         <div className="flex items-center gap-2">
