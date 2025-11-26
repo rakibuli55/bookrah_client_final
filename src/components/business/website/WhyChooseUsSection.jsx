@@ -16,7 +16,7 @@ const WhyChooseUsSection = () => {
     },
     {
       id: 3,
-      title: "Get paid",
+      title: "Stay in Full Control",
       desc: "Bookrah enhances your workflow while keeping your revenue entirely in your hands.Clients book online with ease, and all payments are handled directly at your salon — giving you full flexibility, simplicity, and complete ownership of your business.",
     },
   ];
