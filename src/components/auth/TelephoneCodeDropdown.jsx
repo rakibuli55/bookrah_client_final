@@ -6,7 +6,7 @@ import useGetTelephoneCode from "../../hooks/useGetTelephoneCode";
 
 const TelephoneCodeDropdown = ({ control, name }) => {
   const { telephoneCode, telephoneCodeLoading } = useGetTelephoneCode();
-  const [selectedCode, setSelectedCode] = useState("+880");
+  const [selectedCode, setSelectedCode] = useState("+966");
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef();
 
