@@ -1,20 +1,19 @@
-import Logo from '@/assets/logo/logo-primary.svg';
-import LanguageSelector from '@/components/common/LanguageSelector';
-import PrimaryButtonRounded from '@/components/common/PrimaryButtonRounded';
-import Container from '@/components/container/Container';
-import { cn } from '@/lib/utils';
-import { useEffect, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import MobileMenu from './MobileMenu';
+import Logo from "@/assets/logo/logo-primary.svg";
+import LanguageSelector from "@/components/common/LanguageSelector";
+import PrimaryButtonRounded from "@/components/common/PrimaryButtonRounded";
+import Container from "@/components/container/Container";
+import { cn } from "@/lib/utils";
+import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
-  //   const navigate = useNavigate();
 
   const menuOptions = [
-    { id: 1, path: '/', name: 'Home' },
-    { id: 4, path: '/contact', name: 'Support' },
+    { id: 1, path: "/", name: "Home" },
+    { id: 4, path: "/contact", name: "Support" },
   ];
 
   // handle scroll
@@ -27,24 +26,24 @@ const Navbar = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('resize', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
     };
   }, []);
 
   return (
     <header
       className={`${
-        isScrolled ? 'nav-active' : ''
+        isScrolled ? "nav-active" : ""
       } duration-200 ease-in-out fixed top-0 left-0 w-full z-[50] c-lg:py-8 c-xsm:py-4`}
     >
       <Container className="flex items-center justify-between">
         {/* logo  */}
-        <Link to={'/'} className="logo-width block">
+        <Link to={"/"} className="logo-width block">
           <img src={Logo} className="w-full h-full" alt="BOOKRAH logo" />
         </Link>
 
@@ -58,7 +57,7 @@ const Navbar = () => {
             {/* language selector */}
             <LanguageSelector
               className="hidden lg:block"
-              triggerClassName={cn('text-light', isScrolled && 'text-heading')}
+              triggerClassName={cn("text-light", isScrolled && "text-heading")}
             />
 
             <nav className="bg-heading flex items-center pl-8 pr-2.5 py-2.5 rounded-full gap-8">
@@ -68,9 +67,9 @@ const Navbar = () => {
                   <Link
                     key={menu?.id}
                     className={cn(
-                      'text-base font-medium capitalize inline-block text-white duration-200 ease-in-out hover:text-primary',
+                      "text-base font-medium capitalize inline-block text-white duration-200 ease-in-out hover:text-primary",
                       {
-                        'text-primary': menu?.path === location?.pathname,
+                        "text-primary": menu?.path === location?.pathname,
                       }
                     )}
                     to={menu?.path}
@@ -86,17 +85,17 @@ const Navbar = () => {
                 <PrimaryButtonRounded
                   path="/auth/sign-in"
                   className={
-                    'bg-transparent border border-primary text-primary'
+                    "bg-transparent border border-primary text-primary"
                   }
-                  text={'Log In'}
+                  text={"Log In"}
                 />
                 {/* register business button */}
                 <PrimaryButtonRounded
                   className={
-                    'bg-primary text-heading hover:bg-transparent hover:text-primary border-primary'
+                    "bg-primary text-heading hover:bg-transparent hover:text-primary border-primary"
                   }
-                  path={'/for-business'}
-                  text={'Register Your Business'}
+                  path={"/for-business"}
+                  text={"Register Your Business"}
                 />
               </div>
             </nav>

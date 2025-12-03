@@ -46,7 +46,7 @@ const TestimonialSection = () => {
     title: "Visually stunning, exceptionally intuitive — Bookrah is a next-level system.",
     comment:
       "Even our clients mention how luxurious the booking experience feels compared to others.",
-    commenter: "Omar Benyoussef",
+    commenter: "Omar Ben youssef",
     post: "Founder & Grooming Specialist — Casablanca",
   },
   {

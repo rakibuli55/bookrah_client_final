@@ -4,8 +4,8 @@ import StepOverflowWrapper from "./StepOverflowWrapper";
 const StepTeamSize = ({ register, errors }) => {
   const teamSizeOptions = [
     "It’s just me",
-    "2–5 people",
-    "6–10 people",
+    "1-3 people",
+    "3-10 people",
     "11+ people",
   ];
   return (
