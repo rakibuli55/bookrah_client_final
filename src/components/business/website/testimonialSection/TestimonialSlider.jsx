@@ -4,6 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
+import TextTruncate from "@/utils/TextTruncate";
 
 // import required modules
 import { useState } from "react";
@@ -41,16 +42,16 @@ const TestimonialSlider = ({ slides }) => {
       >
         {slides?.map((slide) => (
           <SwiperSlide key={slide?.id}>
-            <div className="c-md:p-6 c-xsm:p-4 bg-testimonial-cardbg c-md:rounded-[24px] c-xsm:rounded-[12px]">
+            <div className="c-md:p-6 c-xsm:p-4 bg-testimonial-cardbg c-md:rounded-[24px] c-xsm:rounded-[12px] c-md:h-[340px]">
               <div className="flex items-center gap-1 text-[22px] text-[#FB9F33] c-md:mb-8 c-xsm:mb-4">
                 {Array.from({ length: slide?.rating || 0 }).map((_, index) => (
                   <span key={index}>{<IoIosStar />}</span>
                 ))}
               </div>
               <p className="c-md:text-[20px] c-xsm:text-[17px] font-bold text-heading mb-3">
-                {slide?.title}
+                {TextTruncate(slide?.title, 10)}
               </p>
-              <p>{slide?.comment}</p>
+              <p>{TextTruncate(slide?.comment,20)}</p>
               <div className="c-md:mt-8 c-xsm:mt-5">
                 <p className="text-heading font-medium">{slide?.commenter}</p>
                 <p className="mt-1 text-paragraph">{slide?.post}</p>

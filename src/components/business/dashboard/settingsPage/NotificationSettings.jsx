@@ -4,7 +4,7 @@ const notifications = [
   { id: "mentioned", label: "I'm mentioned in a message", enabled: true },
   { id: "replies", label: "Someone replies to any message", enabled: true },
   { id: "overdue", label: "A task is overdue", enabled: false },
-  { id: "assigned", label: "I'm Assign a task", enabled: true },
+  { id: "assigned", label: "I'm assigned a task", enabled: true },
   { id: "statusUpdated", label: "A task status is updated", enabled: true },
   {
     id: "statusUpdatedDuplicate",

@@ -106,7 +106,6 @@ const BusinessSignUpPage = () => {
             id="city"
             placeholder="Enter your city"
             register={register}
-            requiredMessage="City is required"
             required={{ value: true, message: "City is required" }}
             errors={errors}
           />
@@ -119,7 +118,7 @@ const BusinessSignUpPage = () => {
             id="password"
             placeholder="Enter a password"
             register={register}
-            requiredMessage="Password is required"
+            required={{ value: true, message: "Password is required" }}
             errors={errors}
             confirmPasswordId="confirmPassword"
           />
@@ -133,7 +132,7 @@ const BusinessSignUpPage = () => {
             id="confirmPassword"
             placeholder="Retype password"
             register={register}
-            requiredMessage="Confirm password is required"
+            required={{ value: true, message: "Confirm password is required" }}
             errors={errors}
             password={getValues("password")}
           />
