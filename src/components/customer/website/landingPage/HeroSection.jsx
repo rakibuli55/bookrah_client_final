@@ -8,11 +8,13 @@ import 'swiper/css/pagination'; // ← Add this
 
 import Container from '@/components/container/Container';
 import SearchBar from './heroSection/SearchBar';
+import slide1 from "../../../../assets/images/hero-slide-1.jpg"
+import slide2 from "../../../../assets/images/hero-slide-2.jpg"
 
 const backgrounds = [
   'https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?q=80&w=1170&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1649751295468-953038600bef?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  slide2,
+  slide1,
   'https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?q=80&w=1170&auto=format&fit=crop',
 ];
 
