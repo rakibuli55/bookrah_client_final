@@ -53,7 +53,7 @@ const TestimonialSlider = ({ slides }) => {
               </p>
               <p>{TextTruncate(slide?.comment,20)}</p>
               <div className="c-md:mt-8 c-xsm:mt-5">
-                <p className="text-heading font-medium">{slide?.commenter}</p>
+                <p className="text-heading font-medium capitalize">{slide?.commenter}</p>
                 <p className="mt-1 text-paragraph">{slide?.post}</p>
               </div>
             </div>
