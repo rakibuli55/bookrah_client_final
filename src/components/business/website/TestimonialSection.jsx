@@ -55,7 +55,7 @@ const TestimonialSection = () => {
     title: "A polished system with powerful tools and outstanding support.",
     comment:
       "Setup was effortless, the features are premium, and the support team is truly exceptional.",
-    commenter: "Rawan Al-Jasser",
+    commenter: "Rawan Al Jasser",
     post: "Studio Manager — Dammam",
   },
 ];
