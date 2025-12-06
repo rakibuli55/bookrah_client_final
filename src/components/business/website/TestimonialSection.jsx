@@ -19,7 +19,7 @@ const TestimonialSection = () => {
     title: "The booking flow feels seamless, modern, and beautifully polished.",
     comment:
       "Clients often praise how smooth the online booking is. Bookrah reflects the exact level of quality we want to represent.",
-    commenter: "Karim Al Harbi",
+    commenter: "Karim El Harbi",
     post: "Barber & Studio Manager — Jeddah",
   },
   {
@@ -37,7 +37,7 @@ const TestimonialSection = () => {
     title: "Our no-show rate dropped dramatically thanks to Bookrah’s automated reminders.",
     comment:
       "The SMS and email notifications feel personal, professional, and consistently on-brand.",
-    commenter: "Hanan Al Mutairi",
+    commenter: "Hanan Almutairi",
     post: "Lashes & Brow Studio Owner — Riyadh",
   },
   {

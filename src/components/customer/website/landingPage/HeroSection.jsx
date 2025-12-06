@@ -9,11 +9,10 @@ import 'swiper/css/pagination'; // ← Add this
 import Container from '@/components/container/Container';
 import SearchBar from './heroSection/SearchBar';
 import slide1 from "../../../../assets/images/hero-slide-1.jpg"
-import slide2 from "../../../../assets/images/hero-slide-2.jpg"
 
 const backgrounds = [
   'https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?q=80&w=1170&auto=format&fit=crop',
-  slide2,
+  'https://images.pexels.com/photos/8554941/pexels-photo-8554941.jpeg',
   slide1,
   'https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?q=80&w=1170&auto=format&fit=crop',
 ];
