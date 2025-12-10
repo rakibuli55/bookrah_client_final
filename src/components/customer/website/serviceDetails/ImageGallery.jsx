@@ -25,51 +25,6 @@ const ImageGallery = () => {
       src: 'https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=1200&auto=format&fit=crop',
       alt: 'Elegant salon reception with gold accents and plush seating',
     },
-    {
-      id: 4,
-      src: 'https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?q=80&w=1200&auto=format&fit=crop',
-      alt: 'Minimalist salon station with large mirror and LED lighting',
-    },
-    {
-      id: 5,
-      src: 'https://images.unsplash.com/photo-1620332377425-48ff6080b2d8?q=80&w=1200&auto=format&fit=crop',
-      alt: 'Hair washing area with comfortable reclining chairs',
-    },
-    {
-      id: 6,
-      src: 'https://images.unsplash.com/photo-1611143669185-af5f9107caba?q=80&w=1200&auto=format&fit=crop',
-      alt: 'Barber shop corner with vintage leather chair and tools',
-    },
-    {
-      id: 7,
-      src: 'https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?q=80&w=1200&auto=format&fit=crop',
-      alt: 'Spa-like salon with plants, wood tones, and soft lighting',
-    },
-    {
-      id: 8,
-      src: 'https://images.unsplash.com/photo-1621607512214-6829748016eb?q=80&w=1200&auto=format&fit=crop',
-      alt: 'Nail salon station with organized polishes and modern lamps',
-    },
-    {
-      id: 9,
-      src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop',
-      alt: 'Premium salon lounge with velvet sofa and coffee table',
-    },
-    {
-      id: 10,
-      src: 'https://images.unsplash.com/photo-1580618672591-e8d1b14c6e07?q=80&w=1200&auto=format&fit=crop',
-      alt: 'Hair color mixing station with professional products',
-    },
-    {
-      id: 11,
-      src: 'https://images.unsplash.com/photo-1595475889360-78d8b5f9b7f7?q=80&w=1200&auto=format&fit=crop',
-      alt: 'Outdoor salon patio with greenery and cozy seating',
-    },
-    {
-      id: 12,
-      src: 'https://images.unsplash.com/photo-1631214439131-67d2b0f43a1c?q=80&w=1200&auto=format&fit=crop',
-      alt: 'Close-up of stylist tools: scissors, combs, and brushes',
-    },
   ];
 
   return (
