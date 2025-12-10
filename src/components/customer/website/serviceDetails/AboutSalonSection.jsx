@@ -36,7 +36,7 @@ const AboutSalonSection = () => {
 
   return (
     <div className="w-full flex flex-col gap-6 justify-start">
-      <StepTitle title={"About Salone"} />
+      <StepTitle title={"About Salon"} />
       <p className="text-gray-700 leading-relaxed text-base c-md:mt-0 c-xsm:mt-[-10px]">
         Our salon, which has been in business for more than 20 years, is
         dedicated to enhancing both inner and outer beauty. It is our mission to
