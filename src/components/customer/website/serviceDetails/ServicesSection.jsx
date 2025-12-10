@@ -3,24 +3,24 @@ import StepTitle from "../booking/StepTitle";
 import { Link } from "react-router-dom";
 
 const ServicesSection = () => {
-  const filterCategories = ['Featured', 'Man`s hair service', 'Women`s hair service', 'Unfurl Keratin', 'DAOL luxury treatment'];
+  const filterCategories = ['Featured', 'Haircut', 'Wash & Styling', 'Hair Colour', 'Perm & Straightening', 'Treatments'];
   const [activeCategory, setActiveCategory] = useState(filterCategories[0]);
   const services = [
     {
       id: 1,
-      name: "[MAN] cut",
+      name: "Classic Colour",
       duration: "5 min",
       price: 1000,
     },
     {
       id: 2,
-      name: "[WOMEN] 1 cut",
+      name: "Haircut by Yadev",
       duration: "5 min",
       price: 1000,
     },
     {
       id: 3,
-      name: "[MAN] down perm (side)",
+      name: "Nano bubble wash",
       duration: "5 min",
       price: 1000,
     },
@@ -32,13 +32,13 @@ const ServicesSection = () => {
     },
     {
       id: 5,
-      name: "[WOMEN] down perm (side)",
+      name: "Hair Makeover PROMO 688",
       duration: "5 min",
       price: 1000,
     },
     {
       id: 6,
-      name: "Premium Head Spa",
+      name: "Amonia Free Colour",
       duration: "1 hr, 20 min",
       price: 4000,
     },
