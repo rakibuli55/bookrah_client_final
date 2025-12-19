@@ -12,8 +12,8 @@ const PricingPlanSection = () => {
       card: {
         name: "Essence plan",
         price: {
-          current: 69,
-          original: 129,
+          current: 149,
+          original: 299,
           currency: "SAR",
         },
         billingCycle: "/per month",
@@ -33,8 +33,8 @@ const PricingPlanSection = () => {
       card: {
         name: "Advanced plan",
         price: {
-          current: 99,
-          original: 179,
+          current: 199,
+          original: 399,
           currency: "SAR",
         },
         billingCycle: "/per month",
@@ -54,8 +54,8 @@ const PricingPlanSection = () => {
       card: {
         name: "Exclusive plan",
         price: {
-          current: 149,
-          original: 249,
+          current: 299,
+          original: 499,
           currency: "SAR",
         },
         billingCycle: "/per month",
