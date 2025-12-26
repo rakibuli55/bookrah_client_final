@@ -6,6 +6,7 @@ import { useRef, useState } from "react";
 import toast from "react-hot-toast";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import Spinner from "../../../../assets/loaders/spinner.svg"
 
 const UserProfile = ({ user }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -27,7 +28,6 @@ const UserProfile = ({ user }) => {
       },
       onError: (error) => {
         toast.error(error?.data?.data.message || "Something went wrong");
-        console.log(error)
       },
     });
   };
@@ -122,11 +122,12 @@ const UserProfile = ({ user }) => {
             </Link>
           </li>
           <li
-            className="flex items-center justify-between w-full py-2 px-3 rounded-[8px] font-medium duration-200 ease-in-out hover:bg-primary-light"
+            className="flex items-center justify-between w-full py-2 px-3 rounded-[8px] font-medium duration-200 ease-in-out hover:bg-primary-light cursor-pointer"
             onClick={handleUserLogout}
           >
             Log out
-            {isPending && "Loading"}
+            {isPending && (<>
+            <img className="h-5 w-5" src={Spinner} alt="Spinner" /></>)}
           </li>
         </ul>
       </div>
