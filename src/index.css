@@ -80,6 +80,7 @@
   --font-playfair: "Playfair Display", serif;
   --font-satoshi: "Satoshi";
   --color-primary: #d1b67a;
+  --color-primary-light:rgba(209,182,122,0.18);
   --color-theme-bg: #f4f1ec;
   --color-heading: #2f2f2f;
   --color-paragraph: #5a5c5f;

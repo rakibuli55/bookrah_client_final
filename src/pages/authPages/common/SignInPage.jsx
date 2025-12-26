@@ -5,6 +5,10 @@ import Divider from '../../../components/auth/Divider';
 import Fieldset from '../../../components/auth/Fieldset';
 import GoogleSocialLogin from '../../../components/auth/GoogleSocialLogin';
 import PrimaryButton from '../../../components/common/PrimaryButton';
+import useLogin from '@/hooks/auth/useLogin';
+import { useDispatch, useSelector } from 'react-redux';
+import { setToken, setUserInfo } from '@/redux/features/auth/UserInfoSlice';
+import toast from 'react-hot-toast';
 
 const SignInPage = () => {
   const {
@@ -19,12 +23,24 @@ const SignInPage = () => {
 
   const role = searchParams.get('role');
   const email = watch('email');
+  const {mutate, isPending} = useLogin();
+  const dispatch = useDispatch();
 
   const onSubmit = (data) => {
-    console.log(data);
-    if (role === 'professional') {
-      navigate('/business/onboarding');
-    }
+    mutate(data, {
+      onSuccess: (data) => {
+        dispatch(setToken(data?.data?.token?.original?.access_token));
+        dispatch(setUserInfo(data?.data?.user));
+        // if professional login 
+        if(data?.data?.token?.original?.access_token && role === 'professional'){
+          navigate('/for-business')
+        }
+        toast.success(data?.message)
+      },
+      onError: (error) => {
+        toast.error(error?.data?.data.message || 'Something went wrong')
+      }
+    });
   };
 
   return (
@@ -68,8 +84,9 @@ const SignInPage = () => {
         <div>
           <PrimaryButton
             className={'text-center w-full '}
-            text={'Log In'}
+            text={'Log in'}
             type={'submit'}
+            isLoading={isPending}
           />
         </div>
       </form>

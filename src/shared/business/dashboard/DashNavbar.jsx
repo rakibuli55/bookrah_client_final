@@ -21,6 +21,7 @@ const DashNavbar = () => {
   );
   const isMobileDeviceActive = useIsMobile(1199.99);
   const dispatch = useDispatch();
+  const userInfo = useSelector((state) => state.userInfo);
 
   return (
     <header className="c-md:py-4 c-xsm:py-2 c-xsm:rounded-[10px] c-xl:px-8 c-xsm:px-4 fixed top-3 c-xl:right-3 c-xl:left-auto c-xsm:right-3 c-xsm:left-3 bg-dash-gray c-xxxl:w-[calc(100vw-276px)] c-xl:w-[calc(100vw-254px)] c-xsm:w-[calc(100vw-24px)] c-md:rounded-[16px] z-[50]">
@@ -50,7 +51,7 @@ const DashNavbar = () => {
           {/* notification  */}
           <Notifications />
           {/* profile  */}
-          <UserProfile />
+          <UserProfile user={userInfo?.user} />
         </div>
       </div>
     </header>

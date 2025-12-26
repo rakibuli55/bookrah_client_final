@@ -1,8 +1,10 @@
+import UserProfile from "@/components/business/dashboard/navbar/UserProfile";
 import PrimaryButtonRounded from "@/components/common/PrimaryButtonRounded";
 import Container from "@/components/container/Container";
 import { useEffect, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { CgMenu } from "react-icons/cg";
+import { useDispatch, useSelector } from "react-redux";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Logo from "../../assets/logo/logo-primary.svg";
 
@@ -11,6 +13,9 @@ const Navbar = () => {
   const [mobileMenuActive, setMobileMenuActive] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+
+  // userdata
+  const userInfo = useSelector((state) => state.userInfo);
 
   const menuOptions = [
     { id: 1, path: "#", name: "business type" },
@@ -95,10 +100,7 @@ const Navbar = () => {
                 }`}
               >
                 {menuOptions?.map((menu) => (
-                  <li
-                    key={menu?.id}
-                    onClick={() => handleMobileMenu(false)}
-                  >
+                  <li key={menu?.id} onClick={() => handleMobileMenu(false)}>
                     <Link
                       className={`text-base font-medium capitalize inline-block text-heading duration-200 ease-in-out hover:text-primary menu-link ${
                         menu?.path === location?.pathname
@@ -129,13 +131,19 @@ const Navbar = () => {
                 )}
               </div>
               {/* login button  */}
-              <div className="p-1 bg-heading rounded-[32px]">
-                <PrimaryButtonRounded
-                  className={"w-fit"}
-                  path={"/auth/sign-in?role=professional"}
-                  text={"Log In"}
-                />
-              </div>
+              {userInfo.user ? (
+                <>
+                  <UserProfile user={userInfo?.user} />
+                </>
+              ) : (
+                <div className="p-1 bg-heading rounded-[32px]">
+                  <PrimaryButtonRounded
+                    className={"w-fit"}
+                    path={"/auth/sign-in?role=professional"}
+                    text={"Log In"}
+                  />
+                </div>
+              )}
             </div>
           </div>
         </Container>
